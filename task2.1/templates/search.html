@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+</head>
+<body>
+
+        <h1>Найдено кандидатов {{ candidates|length }}</h2>
+            {% for c in candidates %}
+            <p><a href="/candidate/{{ c['id'] }}">{{ c['name'] }}</a></p>
+            {% endfor %}
+
+        
+</body>
+</html>

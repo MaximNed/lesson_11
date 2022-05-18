@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Candidate</title>
+</head>
+<body>
+
+    <h1>{{ candidate['name'] }}</h1>
+    <p>{{ candidate['position'] }}</p>
+    <img src="{{ candidate['picture'].strip('><') }}" width=200/>
+    <p>{{ candidate['skills'] }}</p>
+
+    
+</body>
+</html>
